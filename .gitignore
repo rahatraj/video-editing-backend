@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Prisma generated files
+.prisma/
+*.db
+*.sqlite
+
+# Uploads (video files, temp files)
+uploads/
+src/uploads/
+
+# Logs
+logs/
+*.log
+
+# VS Code configs and system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Optional: Prisma Client generated code
+# (only if you want to generate on install)
+prisma/generated/
+
+# npm debug
+npm-debug.log*
