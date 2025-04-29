@@ -18,20 +18,27 @@ This project is a backend service that allows users to upload, trim, subtitle, r
 
 ##  Project Features
 
-    Upload video and extract metadata  
-    Trim video using FFmpeg  
-    Overlay subtitles with timing  
-    Render final video (combined trimmed + subtitle)  
-    Download final video  
-    List videos  
-    Fetch single video details  
-    Clean validation and modular structure  
+- Upload video and extract metadata 
+
+- Trim video using FFmpeg 
+
+- Overlay subtitles with timing
+
+- Render final video (combined trimmed + subtitle)  
+
+- Download final video  
+
+- List videos  
+
+- Fetch single video details  
+
+- Clean validation and modular structure  
 
 ---
 
 ##  Folder Structure
 
-src/ ├── controllers/ ├── routes/ ├── middlewares/ ├── validators/ ├── utils/ ├── uploads/ └── app.js server.js prisma/ .env
+video-editing-backend/ ├── prisma/ │ └── schema.prisma ├── src/ │ ├── controllers/ │ ├── middlewares/ │ ├── routes/ │ ├── utils/ │ ├── validators/ │ └── uploads/ │ └── app.js ├── server.js ├── .env.example ├── .gitignore └── README.md
 
 
 ---
@@ -50,14 +57,13 @@ cd video-editing-backend
 
  npm install
 
-3. **Set up .env file**
+3. **Set up environment variables**
 
- npx prisma migrate dev --name init
+ - Copy .env.example → rename to .env
 
- **Instructions for usage**
+ - Fill in your PostgreSQL credentials:
 
-    Copy this .env.example → rename to .env
-    Fill in your actual PostgreSQL credentials:
+    DATABASE_URL=postgresql://<username>:<password>@localhost:5432/video_editing
 
     username = "your local PostgreSQL username (e.g., postgres)"
 
@@ -92,8 +98,32 @@ cd video-editing-backend
 
 Watch the Demo
 
+## Note from the Developer
+
+While I chose to complete the Backend task for this assignment,
+I also have experience with frontend technologies such as:
+
+- React.js
+
+- Redux ToolKit
+
+- Tailwind CSS
+
+- Responsive design
+
+- REST API integration
+
+I am confident working across the full stack and can build complete applications end-to-end.
+For this challenge, I focused deeply on the backend to ensure high-quality delivery, clean architecture, and proper validation.
+
+
 ## Author
 MD RAHAT REZA
+📧 rahatreza3199@gmail.com
+🔗 https://www.github.com/rahatraj
+🔗 https://www.linkedin.com/in/md-rahat-reza-57001a1b3/
+
+
 
 
 
